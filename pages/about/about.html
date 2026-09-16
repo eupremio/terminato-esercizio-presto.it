@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../index.css">
+  <link rel="stylesheet" href="../about/about.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Menu a Cerchio con Card Docente Flip</title>
+</head>
+
+<body>
+  <header>
+        <div class="logo-top">
+            <i class="fa-solid fa-space-shuttle"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../annunci/annunci.html">Annunci</a></li>
+                <li><a href="./about.html">Chi Siamo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <main class="main">
+    <!-- Menu a cerchio -->
+    <div class="menu-container">
+      <div class="main-circle" id="mainCircle">Clicca</div>
+    </div>
+
+    <!-- Contenitore della Card Docente con Flip -->
+    <div class="teacher-card-wrapper" id="teacherCard">
+      <div class="teacher-card-inner" id="cardInner">
+
+        <!-- Lato Frontal e -->
+        <div class="card-front">
+          <div class="card-photo" id="cardPhoto">?</div>
+          <div class="card-title" id="cardName">Seleziona Docente</div>
+          <div class="card-subtitle" id="cardRole">Docente</div>
+          <span class="flip-hint">🔄 Clicca per girare</span>
+        </div>
+
+        <!-- Lato Posteriore (Retro) -->
+        <div class="card-back">
+          <div class="card-back-title">Dettagli Docente</div>
+          <div class="card-back-info" id="cardBackInfo">Informazioni sul docente non ancora inserite.</div>
+          <span class="flip-hint" style="margin-top: auto;">🔄 Clicca per girare</span>
+        </div>
+
+      </div>
+    </div>
+
+
+  </main>
+
+  <script src="./about.js"></script>
+</body>
+</html>
